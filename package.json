@@ -1,0 +1,55 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "devDependencies": {
+    "@nuxt/eslint-config": "^0.1.1",
+    "@pinia-plugin-persistedstate/nuxt": "^1.1.1",
+    "@types/node": "^18.15.11",
+    "@typescript-eslint/parser": "^5.57.1",
+    "eslint": "^8.38.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "nuxt": "^3.3.3",
+    "prettier": "^2.8.7",
+    "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "@pinia/nuxt": "^0.4.8",
+    "bulma": "^0.9.4",
+    "firebase": "^9.19.1"
+  },
+  "prettier": {
+    "trailingComma": "es5",
+    "tabWidth": 2,
+    "semi": false,
+    "singleQuote": true,
+    "printWidth": 150
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "browser": true,
+      "node": true
+    },
+    "parser": "vue-eslint-parser",
+    "parserOptions": {
+      "parser": "@typescript-eslint/parser"
+    },
+    "extends": [
+      "@nuxt/eslint-config",
+      "plugin:prettier/recommended"
+    ],
+    "plugins": [],
+    "rules": {
+      "prettier/prettier": "error",
+      "no-console": "off"
+    }
+  }
+}
